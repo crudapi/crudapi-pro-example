@@ -13,6 +13,7 @@
 ### download crudapi jar
 ```bash
 cd lib
+set var PASSWORD 
 ./download.sh
 ```
 
@@ -41,7 +42,7 @@ mvn clean install -Dmaven.test.skip=true
 
 ### Run
 ```bash
-java -jar ./target/crudapi-example-1.0.0.jar
+java -jar ./target/crudapi-pro-example-1.0.0.jar
 ```
 
 ### Swagger

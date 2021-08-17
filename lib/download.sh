@@ -1,10 +1,31 @@
 rm -rf *.jar
+
+USERNAME=crudapi
+PASSWORD=
 VERSION=1.0.0
-BASE_URL=https://download.crudapi.cn/free
+BASE_URL=https://download.crudapi.cn/pro
 CRUDAPI_CORE_JRA_URL=$BASE_URL/$VERSION/crudapi-core-$VERSION.jar
 CRUDAPI_API_JRA_URL=$BASE_URL/$VERSION/crudapi-api-$VERSION.jar
+CRUDAPI_SECURITY_JRA_URL=$BASE_URL/$VERSION/crudapi-security-$VERSION.jar
+CRUDAPI_REST_JRA_URL=$BASE_URL/$VERSION/crudapi-rest-$VERSION.jar
+CRUDAPI_WEIXIN_JRA_URL=$BASE_URL/$VERSION/crudapi-weixin-$VERSION.jar
+
 echo "$CRUDAPI_CORE_JRA_URL"
 echo "$CRUDAPI_API_JRA_URL"
-curl -O $CRUDAPI_CORE_JRA_URL
-curl -O $CRUDAPI_API_JRA_URL
-ls *.jar
+echo "$CRUDAPI_SECURITY_JRA_URL"
+echo "$CRUDAPI_REST_JRA_URL"
+echo "$CRUDAPI_WEIXIN_JRA_URL"
+
+
+if [ "$PASSWORD" == "" ]; then
+    echo "Please set PASSWORD env first!"
+else
+    curl -u $USERNAME:$PASSWORD -O $CRUDAPI_CORE_JRA_URL
+	curl -u $USERNAME:$PASSWORD -O $CRUDAPI_API_JRA_URL
+	curl -u $USERNAME:$PASSWORD -O $CRUDAPI_SECURITY_JRA_URL
+	curl -u $USERNAME:$PASSWORD -O $CRUDAPI_REST_JRA_URL
+	curl -u $USERNAME:$PASSWORD -O $CRUDAPI_WEIXIN_JRA_URL
+	ls *.jar
+fi
+
+
