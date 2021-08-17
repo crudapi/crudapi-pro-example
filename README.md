@@ -3,12 +3,17 @@
 ## Language
 [中文](README_CN.md)
 
+## Price
+<div align="left">
+  <img src="./img/price.png">
+</div>
+
 ## GIT URL
 ### GitHub repo
-[https://github.com/crudapi/crudapi-example](https://github.com/crudapi/crudapi-example)
+[https://github.com/crudapi/crudapi-pro-example](https://github.com/crudapi/crudapi-pro-example)
 
 ### Gitee repo
-[https://gitee.com/crudapi/crudapi-example](https://gitee.com/crudapi/crudapi-example)
+[https://gitee.com/crudapi/crudapi-pro-example](https://gitee.com/crudapi/crudapi-pro-example)
 
 ### download crudapi jar
 ```bash
