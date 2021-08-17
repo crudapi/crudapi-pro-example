@@ -26,7 +26,7 @@ crudapi-pro-example | 商用Java集成SDK  | 商用版 | [crudapi-pro-example](h
 ### 下载Jar包
 ```bash
 cd lib
-设置变量PASSWORD 
+设置变量PASSWORD，请联系客户咨询密码
 ./download.sh
 ```
 

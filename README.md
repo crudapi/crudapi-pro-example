@@ -26,7 +26,7 @@ crudapi-pro-example | Java Pro SDK  | Bussiness | [crudapi-pro-example](https://
 ### download crudapi jar
 ```bash
 cd lib
-set var PASSWORD 
+set var PASSWORD, please contact us for get password!
 ./download.sh
 ```
 
