@@ -7,14 +7,15 @@
 名称 | 类型 | 授权 | GitHub仓库 | Gitee仓库
 --- | --- | --- | --- | ---
 crudapi-admin-web | Vue Qusar源码 | 开源 | [crudapi-admin-web](https://github.com/crudapi/crudapi-admin-web) | [crudapi-admin-web](https://gitee.com/crudapi/crudapi-admin-web)
-crudapi-example| Java集成SDK | 免费版 | [crudapi-example](https://github.com/crudapi/crudapi-example) | [crudapi-example](https://gitee.com/crudapi/crudapi-example)
-crudapi-pro-example | 商用Java集成SDK  | 商用版 | [crudapi-pro-example](https://github.com/crudapi/crudapi-pro-example) | [crudapi-pro-example](https://gitee.com/crudapi/crudapi-pro-example)
+crudapi-example| 个人版Java集成SDK | 免费| [crudapi-example](https://github.com/crudapi/crudapi-example) | [crudapi-example](https://gitee.com/crudapi/crudapi-example)
+crudapi-pro-example | 商用版Java集成SDK  | 商用 | [crudapi-pro-example](https://github.com/crudapi/crudapi-pro-example) | [crudapi-pro-example](https://gitee.com/crudapi/crudapi-pro-example)
 
 ## 价格
 <div align="left">
-  <img src="./img/price.png">
+  <img width="540" src="./img/price.png">
 </div>
 
+购买商业版，送所有源码，包括前端Vue源码和后台Java源码。
 
 ## GIT地址
 ### GitHub仓库
@@ -33,8 +34,10 @@ cd lib
 ### 本地安装Jar包
 ```bash
 mvn install:install-file -Dfile=./lib/crudapi-core-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-core -Dversion=1.0.0 -Dpackaging=jar
-
 mvn install:install-file -Dfile=./lib/crudapi-api-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-api -Dversion=1.0.0 -Dpackaging=jar
+mvn install:install-file -Dfile=./lib/crudapi-rest-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-rest -Dversion=1.0.0 -Dpackaging=jar
+mvn install:install-file -Dfile=./lib/crudapi-security-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-security -Dversion=1.0.0 -Dpackaging=jar
+mvn install:install-file -Dfile=./lib/crudapi-weixin-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-weixin -Dversion=1.0.0 -Dpackaging=jar
 ```
 
 ### 导入数据库

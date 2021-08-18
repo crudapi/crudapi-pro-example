@@ -10,11 +10,12 @@ crudapi-admin-web | Vue Qusar Code | Open Source | [crudapi-admin-web](https://g
 crudapi-example| Java SDK | Free | [crudapi-example](https://github.com/crudapi/crudapi-example) | [crudapi-example](https://gitee.com/crudapi/crudapi-example)
 crudapi-pro-example | Java Pro SDK  | Bussiness | [crudapi-pro-example](https://github.com/crudapi/crudapi-pro-example) | [crudapi-pro-example](https://gitee.com/crudapi/crudapi-pro-example)
 
-
 ## Price
 <div align="left">
-  <img src="./img/price.png">
+  <img width="540" src="./img/price.png">
 </div>
+
+Purchase commercial edition, send all source code, including front-end Vue source code and background Java source code.
 
 ## GIT URL
 ### GitHub repo
@@ -33,8 +34,10 @@ set var PASSWORD, please contact us for get password!
 ### Install crudapi jar
 ```bash
 mvn install:install-file -Dfile=./lib/crudapi-core-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-core -Dversion=1.0.0 -Dpackaging=jar
-
 mvn install:install-file -Dfile=./lib/crudapi-api-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-api -Dversion=1.0.0 -Dpackaging=jar
+mvn install:install-file -Dfile=./lib/crudapi-rest-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-rest -Dversion=1.0.0 -Dpackaging=jar
+mvn install:install-file -Dfile=./lib/crudapi-security-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-security -Dversion=1.0.0 -Dpackaging=jar
+mvn install:install-file -Dfile=./lib/crudapi-weixin-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-weixin -Dversion=1.0.0 -Dpackaging=jar
 ```
 
 ### Import database
