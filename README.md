@@ -24,20 +24,11 @@ Purchase commercial edition, send all source code, including front-end Vue sourc
 ### Gitee repo
 [https://gitee.com/crudapi/crudapi-pro-example](https://gitee.com/crudapi/crudapi-pro-example)
 
-### download crudapi jar
+### download and install crudapi jar
 ```bash
 cd lib
 set var PASSWORD, please contact us for get password!
 ./download.sh
-```
-
-### Install crudapi jar
-```bash
-mvn install:install-file -Dfile=./lib/crudapi-core-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-core -Dversion=1.0.0 -Dpackaging=jar
-mvn install:install-file -Dfile=./lib/crudapi-api-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-api -Dversion=1.0.0 -Dpackaging=jar
-mvn install:install-file -Dfile=./lib/crudapi-rest-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-rest -Dversion=1.0.0 -Dpackaging=jar
-mvn install:install-file -Dfile=./lib/crudapi-security-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-security -Dversion=1.0.0 -Dpackaging=jar
-mvn install:install-file -Dfile=./lib/crudapi-weixin-1.0.0.jar -DgroupId=cn.crudapi -DartifactId=crudapi-weixin -Dversion=1.0.0 -Dpackaging=jar
 ```
 
 ### Import database
@@ -58,7 +49,7 @@ mvn clean install -Dmaven.test.skip=true
 
 ### Run
 ```bash
-java -jar ./target/crudapi-pro-example-1.0.0.jar
+java -jar ./target/crudapi-pro-example-1.1.0.jar
 ```
 
 ### Swagger

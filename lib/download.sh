@@ -28,4 +28,10 @@ else
 	ls *.jar
 fi
 
+mvn install:install-file -Dfile=crudapi-core-$VERSION.jar -DgroupId=cn.crudapi -DartifactId=crudapi-core -Dversion=$VERSION -Dpackaging=jar
+mvn install:install-file -Dfile=crudapi-api-$VERSION.jar -DgroupId=cn.crudapi -DartifactId=crudapi-api -Dversion=$VERSION -Dpackaging=jar
+mvn install:install-file -Dfile=crudapi-rest-$VERSION.jar -DgroupId=cn.crudapi -DartifactId=crudapi-rest -Dversion=$VERSION -Dpackaging=jar
+mvn install:install-file -Dfile=crudapi-security-$VERSION.jar -DgroupId=cn.crudapi -DartifactId=crudapi-security -Dversion=$VERSION -Dpackaging=jar
+mvn install:install-file -Dfile=crudapi-weixin-$VERSION.jar -DgroupId=cn.crudapi -DartifactId=crudapi-weixin -Dversion=$VERSION -Dpackaging=jar
+
 
