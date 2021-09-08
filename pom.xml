@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.crudapi</groupId>
 	<artifactId>crudapi-pro-example</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<name>crudapi-pro-example</name>
 	<description>Demo project for crudapi pro</description>
 	<parent>
@@ -131,27 +131,27 @@
 	    <dependency>
 	        <groupId>cn.crudapi</groupId>
 	        <artifactId>crudapi-core</artifactId>
-	        <version>1.0.0</version>
+	        <version>1.1.0</version>
 	    </dependency>
 	    <dependency>
 	        <groupId>cn.crudapi</groupId>
 	        <artifactId>crudapi-api</artifactId>
-	        <version>1.0.0</version>
+	        <version>1.1.0</version>
 	    </dependency>
 		<dependency>
             <groupId>cn.crudapi</groupId>
             <artifactId>crudapi-security</artifactId>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
         </dependency>
 	    <dependency>
 	        <groupId>cn.crudapi</groupId>
 	        <artifactId>crudapi-rest</artifactId>
-	        <version>1.0.0</version>
+	        <version>1.1.0</version>
 	    </dependency>
 	    <dependency>
 	        <groupId>cn.crudapi</groupId>
 	        <artifactId>crudapi-weixin</artifactId>
-	        <version>1.0.0</version>
+	        <version>1.1.0</version>
 	    </dependency>
 	</dependencies>
 	<build>
