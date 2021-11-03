@@ -2,7 +2,7 @@ rm -rf *.jar
 
 USERNAME=crudapi
 PASSWORD=
-VERSION=1.1.0
+VERSION=1.2.0
 BASE_URL=https://download.crudapi.cn/pro
 CRUDAPI_CORE_JRA_URL=$BASE_URL/$VERSION/crudapi-core-$VERSION.jar
 CRUDAPI_API_JRA_URL=$BASE_URL/$VERSION/crudapi-api-$VERSION.jar
