@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.crudapi</groupId>
 	<artifactId>crudapi-pro-example</artifactId>
-	<version>1.2.0</version>
+	<version>1.3.0</version>
 	<name>crudapi-pro-example</name>
 	<description>Demo project for crudapi pro</description>
 	<parent>
@@ -44,6 +44,11 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <scope>runtime</scope>
+    </dependency>
 		<dependency>
 		    <groupId>commons-codec</groupId>
 		    <artifactId>commons-codec</artifactId>
@@ -131,27 +136,27 @@
 	    <dependency>
 	        <groupId>cn.crudapi</groupId>
 	        <artifactId>crudapi-core</artifactId>
-	        <version>1.2.0</version>
+	        <version>1.3.0</version>
 	    </dependency>
 	    <dependency>
 	        <groupId>cn.crudapi</groupId>
 	        <artifactId>crudapi-api</artifactId>
-	        <version>1.2.0</version>
+	        <version>1.3.0</version>
 	    </dependency>
 		<dependency>
             <groupId>cn.crudapi</groupId>
             <artifactId>crudapi-security</artifactId>
-            <version>1.2.0</version>
+            <version>1.3.0</version>
         </dependency>
 	    <dependency>
 	        <groupId>cn.crudapi</groupId>
 	        <artifactId>crudapi-rest</artifactId>
-	        <version>1.2.0</version>
+	        <version>1.3.0</version>
 	    </dependency>
 	    <dependency>
 	        <groupId>cn.crudapi</groupId>
 	        <artifactId>crudapi-weixin</artifactId>
-	        <version>1.2.0</version>
+	        <version>1.3.0</version>
 	    </dependency>
 	</dependencies>
 	<build>
