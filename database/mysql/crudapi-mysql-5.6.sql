@@ -102,13 +102,13 @@ CREATE TABLE `ca_meta_column` (
   `defaultValue` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `displayOrder` int DEFAULT NULL,
-  `indexName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `indexName` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `indexStorage` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `indexType` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `insertable` bit(1) DEFAULT NULL,
   `lastModifiedDate` datetime(6) DEFAULT NULL,
   `length` int DEFAULT NULL,
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `nullable` bit(1) DEFAULT NULL,
   `precision` int DEFAULT NULL,
   `queryable` bit(1) DEFAULT NULL,
@@ -135,7 +135,7 @@ INSERT INTO `ca_meta_column` (`id`, `autoIncrement`, `caption`, `createdDate`, `
 (7, b'0', '用户名', '2020-12-23 17:06:29.211000', 'VARCHAR', NULL, '用户名', 6, 'uq_spring_user_username', NULL, 'UNIQUE', b'1', '2021-08-05 10:52:53.967000', 50, 'username', b'0', NULL, b'1', NULL, NULL, b'0', b'1', b'0', b'0', 1),
 (8, b'0', '真实姓名', '2020-12-23 17:06:29.211000', 'VARCHAR', NULL, '真实姓名', 7, NULL, NULL, NULL, b'1', '2021-08-05 10:52:53.967000', 200, 'realname', b'1', NULL, b'1', NULL, NULL, b'0', b'1', b'0', b'0', 1),
 (9, b'0', '手机', '2020-12-23 17:06:29.211000', 'VARCHAR', NULL, '手机', 8, 'uq_spring_user_mobile', NULL, 'UNIQUE', b'1', '2021-08-05 10:52:53.967000', 20, 'mobile', b'1', NULL, b'1', NULL, NULL, b'0', b'1', b'0', b'0', 1),
-(10, b'0', '邮箱', '2020-12-23 17:06:29.211000', 'VARCHAR', NULL, '邮箱', 9, 'uq_spring_user_email', NULL, 'UNIQUE', b'1', '2021-08-05 10:52:53.967000', 200, 'email', b'1', NULL, b'1', NULL, NULL, b'0', b'1', b'0', b'0', 1),
+(10, b'0', '邮箱', '2020-12-23 17:06:29.211000', 'VARCHAR', NULL, '邮箱', 9, 'uq_spring_user_email', NULL, 'UNIQUE', b'1', '2021-08-05 10:52:53.967000', 191, 'email', b'1', NULL, b'1', NULL, NULL, b'0', b'1', b'0', b'0', 1),
 (11, b'0', '密码', '2020-12-23 17:06:29.211000', 'PASSWORD', NULL, '密码', 10, NULL, NULL, NULL, b'1', '2021-08-05 10:52:53.967000', 500, 'password', b'0', NULL, b'0', NULL, NULL, b'0', b'1', b'0', b'0', 1),
 (12, b'0', '明文密码', '2020-12-23 17:06:29.211000', 'VARCHAR', NULL, '明文密码', 11, NULL, NULL, NULL, b'1', '2021-08-05 10:52:53.967000', 200, 'cleartextPwd', b'1', NULL, b'0', NULL, NULL, b'0', b'1', b'0', b'0', 1),
 (13, b'0', 'TOKEN', '2020-12-23 17:06:29.211000', 'VARCHAR', NULL, 'TOKEN', 12, NULL, NULL, NULL, b'1', '2021-08-05 10:52:53.967000', 200, 'token', b'1', NULL, b'0', NULL, NULL, b'0', b'1', b'0', b'0', 1),
@@ -148,14 +148,14 @@ INSERT INTO `ca_meta_column` (`id`, `autoIncrement`, `caption`, `createdDate`, `
 (22, b'0', '全文索引', '2021-02-01 10:51:21.334000', 'TEXT', NULL, '全文索引', 2, 'ft_fulltext_body', NULL, 'FULLTEXT', b'0', '2021-08-05 10:53:53.431000', NULL, 'fullTextBody', b'1', NULL, b'0', NULL, NULL, b'0', b'0', b'0', b'1', 2),
 (23, b'0', '创建时间', '2021-02-01 10:51:21.334000', 'DATETIME', NULL, '创建时间', 3, NULL, NULL, NULL, b'0', '2021-08-05 10:53:53.431000', NULL, 'createdDate', b'0', NULL, b'0', NULL, NULL, b'0', b'0', b'0', b'1', 2),
 (24, b'0', '修改时间', '2021-02-01 10:51:21.334000', 'DATETIME', NULL, '修改时间', 4, NULL, NULL, NULL, b'0', '2021-08-05 10:53:53.431000', NULL, 'lastModifiedDate', b'1', NULL, b'0', NULL, NULL, b'0', b'0', b'0', b'1', 2),
-(25, b'0', '编码', '2021-02-01 10:51:21.334000', 'VARCHAR', NULL, '编码', 5, 'uq_spring_role_code', NULL, 'UNIQUE', b'1', '2021-08-05 10:53:53.431000', 200, 'code', b'0', NULL, b'1', NULL, 1, b'0', b'1', b'0', b'0', 2),
+(25, b'0', '编码', '2021-02-01 10:51:21.334000', 'VARCHAR', NULL, '编码', 5, 'uq_spring_role_code', NULL, 'UNIQUE', b'1', '2021-08-05 10:53:53.431000', 191, 'code', b'0', NULL, b'1', NULL, 1, b'0', b'1', b'0', b'0', 2),
 (26, b'0', '备注', '2021-02-01 10:51:21.334000', 'TEXT', NULL, '备注', 6, NULL, NULL, NULL, b'1', '2021-08-05 10:53:53.431000', NULL, 'remark', b'1', NULL, b'1', NULL, NULL, b'0', b'1', b'0', b'0', 2),
 (27, b'1', '编号', '2021-02-01 10:54:05.671000', 'BIGINT', NULL, '主键', 0, NULL, NULL, 'PRIMARY', b'0', '2021-02-05 17:52:19.036000', 20, 'id', b'0', NULL, b'0', NULL, NULL, b'1', b'0', NULL, b'1', 3),
 (28, b'0', '名称', '2021-02-01 10:54:05.671000', 'VARCHAR', NULL, '名称', 1, NULL, NULL, NULL, b'1', '2021-02-05 17:52:19.036000', 200, 'name', b'0', NULL, b'1', NULL, NULL, b'0', b'1', b'1', b'1', 3),
 (29, b'0', '全文索引', '2021-02-01 10:54:05.671000', 'TEXT', NULL, '全文索引', 2, 'ft_fulltext_body', NULL, 'FULLTEXT', b'0', '2021-02-05 17:52:19.036000', NULL, 'fullTextBody', b'1', NULL, b'0', NULL, NULL, b'0', b'0', NULL, b'1', 3),
 (30, b'0', '创建时间', '2021-02-01 10:54:05.671000', 'DATETIME', NULL, '创建时间', 3, NULL, NULL, NULL, b'0', '2021-02-05 17:52:19.036000', NULL, 'createdDate', b'0', NULL, b'0', NULL, NULL, b'0', b'0', NULL, b'1', 3),
 (31, b'0', '修改时间', '2021-02-01 10:54:05.671000', 'DATETIME', NULL, '修改时间', 4, NULL, NULL, NULL, b'0', '2021-02-05 17:52:19.036000', NULL, 'lastModifiedDate', b'1', NULL, b'0', NULL, NULL, b'0', b'0', NULL, b'1', 3),
-(33, b'0', 'URL表达式', '2021-02-01 10:54:05.671000', 'VARCHAR', NULL, 'URL表达式', 6, 'uq_spring_resource_url', NULL, 'UNIQUE', b'1', '2021-02-05 17:52:19.036000', 200, 'url', b'1', NULL, b'1', NULL, NULL, b'0', b'1', NULL, b'0', 3),
+(33, b'0', 'URL表达式', '2021-02-01 10:54:05.671000', 'VARCHAR', NULL, 'URL表达式', 6, 'uq_spring_resource_url', NULL, 'UNIQUE', b'1', '2021-02-05 17:52:19.036000', 191, 'url', b'1', NULL, b'1', NULL, NULL, b'0', b'1', NULL, b'0', 3),
 (34, b'0', '备注', '2021-02-01 10:54:05.671000', 'TEXT', NULL, '备注', 8, NULL, NULL, NULL, b'1', '2021-02-05 17:52:19.036000', NULL, 'remark', b'1', NULL, b'1', NULL, NULL, b'0', b'1', NULL, b'0', 3),
 (35, b'1', '编号', '2021-02-01 11:11:15.313000', 'BIGINT', NULL, '主键', 0, NULL, NULL, 'PRIMARY', b'0', '2021-02-01 11:11:15.313000', 20, 'id', b'0', NULL, b'0', NULL, NULL, b'1', b'0', NULL, b'1', 4),
 (36, b'0', '名称', '2021-02-01 11:11:15.313000', 'VARCHAR', NULL, '名称', 1, NULL, NULL, NULL, b'1', '2021-02-01 11:11:15.313000', 200, 'name', b'0', NULL, b'1', NULL, NULL, b'0', b'1', b'1', b'1', 4),
@@ -171,7 +171,7 @@ INSERT INTO `ca_meta_column` (`id`, `autoIncrement`, `caption`, `createdDate`, `
 (46, b'0', '修改时间', '2021-02-01 11:27:24.851000', 'DATETIME', NULL, '修改时间', 4, NULL, NULL, NULL, b'0', '2021-02-03 16:43:36.326000', NULL, 'lastModifiedDate', b'1', NULL, b'0', NULL, NULL, b'0', b'0', NULL, b'1', 5),
 (47, b'0', '角色编号', '2021-02-01 11:27:24.851000', 'BIGINT', NULL, '角色编号', 5, NULL, NULL, NULL, b'1', '2021-02-03 16:43:36.326000', 20, 'roleId', b'1', NULL, b'1', NULL, NULL, b'0', b'1', NULL, b'0', 5),
 (48, b'0', '资源编号', '2021-02-01 11:27:24.851000', 'BIGINT', NULL, '资源编号', 6, NULL, NULL, NULL, b'1', '2021-02-03 16:43:36.326000', 20, 'resourceId', b'1', NULL, b'1', NULL, NULL, b'0', b'1', NULL, b'0', 5),
-(56, b'0', '编码', '2021-02-02 10:06:53.176000', 'VARCHAR', NULL, '编码', 5, 'uq_spring_resource_code', NULL, 'UNIQUE', b'1', '2021-02-05 17:52:19.036000', 200, 'code', b'1', NULL, b'1', NULL, 2, b'0', b'1', NULL, b'0', 3),
+(56, b'0', '编码', '2021-02-02 10:06:53.176000', 'VARCHAR', NULL, '编码', 5, 'uq_spring_resource_code', NULL, 'UNIQUE', b'1', '2021-02-05 17:52:19.036000', 191, 'code', b'1', NULL, b'1', NULL, 2, b'0', b'1', NULL, b'0', 3),
 (58, b'0', '操作', '2021-02-03 16:44:10.071000', 'VARCHAR', NULL, '操作', 7, NULL, NULL, NULL, b'1', '2021-02-05 17:52:19.036000', 200, 'action', b'1', NULL, b'1', NULL, NULL, b'0', b'1', NULL, b'0', 3),
 (155, b'1', '编号', '2021-02-07 11:57:10.131000', 'BIGINT', NULL, '主键', 0, NULL, NULL, 'PRIMARY', b'0', '2021-02-07 15:25:57.167000', 20, 'id', b'0', NULL, b'0', NULL, NULL, b'1', b'0', NULL, b'1', 19),
 (156, b'0', '名称', '2021-02-07 11:57:10.131000', 'VARCHAR', NULL, '名称', 1, NULL, NULL, NULL, b'1', '2021-02-07 15:25:57.167000', 200, 'name', b'0', NULL, b'1', NULL, NULL, b'0', b'1', b'1', b'1', 19),
@@ -269,7 +269,7 @@ INSERT INTO `ca_meta_column` (`id`, `autoIncrement`, `caption`, `createdDate`, `
 (491, b'0', '全文索引', '2021-11-03 11:23:02.177000', 'TEXT', NULL, '全文索引', 2, 'ft_fulltext_body', NULL, 'FULLTEXT', b'0', '2021-11-03 11:23:02.177000', NULL, 'fullTextBody', b'1', NULL, b'0', NULL, NULL, b'0', b'0', b'0', b'0', 69),
 (492, b'0', '创建时间', '2021-11-03 11:23:02.177000', 'DATETIME', NULL, '创建时间', 3, NULL, NULL, NULL, b'0', '2021-11-03 11:23:02.177000', NULL, 'createdDate', b'0', NULL, b'0', NULL, NULL, b'0', b'0', b'0', b'0', 69),
 (493, b'0', '修改时间', '2021-11-03 11:23:02.177000', 'DATETIME', NULL, '修改时间', 4, NULL, NULL, NULL, b'0', '2021-11-03 11:23:02.177000', NULL, 'lastModifiedDate', b'1', NULL, b'0', NULL, NULL, b'0', b'0', b'0', b'0', 69),
-(494, b'0', '类型', '2021-11-03 11:23:02.177000', 'VARCHAR', NULL, '类型', 5, NULL, NULL, NULL, b'1', '2021-11-03 11:23:02.177000', 200, 'type', b'1', NULL, b'1', NULL, NULL, b'0', b'1', b'0', b'0', 69),
+(494, b'0', '类型', '2021-11-03 11:23:02.177000', 'VARCHAR', NULL, '类型', 5, NULL, NULL, NULL, b'1', '2021-11-03 11:23:02.177000', 191, 'type', b'1', NULL, b'1', NULL, NULL, b'0', b'1', b'0', b'0', 69),
 (495, b'0', '设备', '2021-11-03 11:23:02.177000', 'VARCHAR', NULL, '设备', 6, NULL, NULL, NULL, b'1', '2021-11-03 11:23:02.177000', 200, 'device', b'1', NULL, b'1', NULL, NULL, b'0', b'1', b'0', b'0', 69),
 (496, b'0', '内容', '2021-11-03 11:23:02.177000', 'LONGTEXT', NULL, '内容', 7, NULL, NULL, NULL, b'1', '2021-11-03 11:23:02.177000', NULL, 'body', b'1', NULL, b'1', NULL, NULL, b'0', b'1', b'0', b'0', 69),
 (497, b'0', '表编号', '2021-11-03 11:23:02.177000', 'BIGINT', NULL, '表编号', 8, NULL, NULL, NULL, b'1', '2021-11-03 11:23:02.177000', 20, 'tableId', b'1', NULL, b'1', NULL, NULL, b'0', b'1', b'0', b'0', 69);
@@ -288,7 +288,7 @@ CREATE TABLE `ca_meta_index` (
   `indexStorage` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `indexType` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `lastModifiedDate` datetime(6) DEFAULT NULL,
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `tableId` bigint DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -337,7 +337,7 @@ CREATE TABLE `ca_meta_sequence` (
   `lastModifiedDate` datetime(6) DEFAULT NULL,
   `maxValue` bigint DEFAULT NULL,
   `minValue` bigint DEFAULT NULL,
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `nextValue` bigint DEFAULT NULL,
   `sequenceType` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -365,9 +365,9 @@ CREATE TABLE `ca_meta_table` (
   `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `engine` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `lastModifiedDate` datetime(6) DEFAULT NULL,
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `pluralName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `tableName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pluralName` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tableName` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `systemable` bit(1) DEFAULT NULL,
   `readOnly` bit(1) DEFAULT NULL COMMENT '是否只读'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -408,7 +408,7 @@ CREATE TABLE `ca_meta_table_relation` (
   `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `lastModifiedDate` datetime(6) DEFAULT NULL,
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `relationType` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `relationType` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `fromColumnId` bigint DEFAULT NULL,
   `fromTableId` bigint DEFAULT NULL,
   `toColumnId` bigint DEFAULT NULL,
@@ -575,7 +575,7 @@ CREATE TABLE `ca_tableFormBuilder` (
   `fullTextBody` text COLLATE utf8mb4_unicode_ci COMMENT '全文索引',
   `createdDate` datetime NOT NULL COMMENT '创建时间',
   `lastModifiedDate` datetime DEFAULT NULL COMMENT '修改时间',
-  `type` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '类型',
+  `type` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '类型',
   `device` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '设备',
   `body` longtext COLLATE utf8mb4_unicode_ci COMMENT '内容',
   `tableId` bigint DEFAULT NULL COMMENT '表编号'
@@ -652,9 +652,9 @@ CREATE TABLE `spring_resource` (
   `fullTextBody` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `createdDate` datetime NOT NULL,
   `lastModifiedDate` datetime DEFAULT NULL,
-  `url` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `url` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `remark` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-  `code` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `code` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `action` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -681,7 +681,7 @@ CREATE TABLE `spring_role` (
   `fullTextBody` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `createdDate` datetime NOT NULL,
   `lastModifiedDate` datetime DEFAULT NULL,
-  `code` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `code` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `remark` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -721,7 +721,7 @@ CREATE TABLE `SPRING_SESSION` (
 
 CREATE TABLE `SPRING_SESSION_ATTRIBUTES` (
   `SESSION_PRIMARY_ID` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `ATTRIBUTE_NAME` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ATTRIBUTE_NAME` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `ATTRIBUTE_BYTES` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
@@ -740,9 +740,9 @@ CREATE TABLE `spring_user` (
   `id` bigint NOT NULL,
   `openId` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `realname` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `realname` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `mobile` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `email` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `password` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `cleartextPwd` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `token` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
