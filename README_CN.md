@@ -7,27 +7,11 @@
 名称 | 类型 | 授权 | GitHub仓库 | Gitee仓库
 --- | --- | --- | --- | ---
 crudapi-admin-web | Vue Qusar源码 | 开源 | [crudapi-admin-web](https://github.com/crudapi/crudapi-admin-web) | [crudapi-admin-web](https://gitee.com/crudapi/crudapi-admin-web)
-crudapi-example| 个人版Java集成SDK | 免费| [crudapi-example](https://github.com/crudapi/crudapi-example) | [crudapi-example](https://gitee.com/crudapi/crudapi-example)
-crudapi-pro-example | 商用版Java集成SDK  | 商用 | [crudapi-pro-example](https://github.com/crudapi/crudapi-pro-example) | [crudapi-pro-example](https://gitee.com/crudapi/crudapi-pro-example)
-
-## 价格
-<div align="left">
-  <img width="540" src="./img/price.png">
-</div>
-
-购买商业版，送所有源码，包括前端Vue源码和后台Java源码。
-
-## GIT地址
-### GitHub仓库
-[https://github.com/crudapi/crudapi-pro-example](https://github.com/crudapi/crudapi-pro-example)
-
-### Gitee仓库
-[https://gitee.com/crudapi/crudapi-pro-example](https://gitee.com/crudapi/crudapi-pro-example)
+crudapi-example| Java集成SDK | 永久免费 | [crudapi-example](https://github.com/crudapi/crudapi-example) | [crudapi-example](https://gitee.com/crudapi/crudapi-example)
 
 ### 下载安装Jar包
 ```bash
 cd lib
-设置变量PASSWORD，请联系客户咨询密码
 ./download.sh
 ```
 
@@ -95,19 +79,16 @@ mvn clean install -Dmaven.test.skip=true
 
 ### 运行
 ```bash
-java -jar ./target/crudapi-pro-example-1.4.0.jar
+java -jar ./target/crudapi-example-1.4.0.jar
 ```
 
 ### swagger文档
 [http://127.0.0.1:8888/swagger-ui.html](http://127.0.0.1:8888/swagger-ui.html)
 
-### 用户名和密码
-```
-superadmin
-1234567890
-```
-
 ### crudapi后台管理WEB
+[http://127.0.0.1:8888/crudapi/](http://127.0.0.1:8888/crudapi/)
+
+### crudapi后台管理WEB(二次开发)
 #### GitHub仓库
 [https://github.com/crudapi/crudapi-admin-web](https://github.com/crudapi/crudapi-admin-web)
 
@@ -149,6 +130,9 @@ admin@crudapi.cn
 
 #### QQ
 1440737304
+
+#### QQ群
+632034576
 
 #### 微信
 undefinedneqnull

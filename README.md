@@ -7,27 +7,12 @@
 Name | Type | License | GitHub| Gitee
 --- | --- | --- | --- | ---
 crudapi-admin-web | Vue Qusar Code | Open Source | [crudapi-admin-web](https://github.com/crudapi/crudapi-admin-web) | [crudapi-admin-web](https://gitee.com/crudapi/crudapi-admin-web)
-crudapi-example| Java SDK | Free | [crudapi-example](https://github.com/crudapi/crudapi-example) | [crudapi-example](https://gitee.com/crudapi/crudapi-example)
-crudapi-pro-example | Java Pro SDK  | Bussiness | [crudapi-pro-example](https://github.com/crudapi/crudapi-pro-example) | [crudapi-pro-example](https://gitee.com/crudapi/crudapi-pro-example)
+crudapi-example| Java SDK | Free Forever | [crudapi-example](https://github.com/crudapi/crudapi-example) | [crudapi-example](https://gitee.com/crudapi/crudapi-example)
 
-## Price
-<div align="left">
-  <img width="540" src="./img/price.png">
-</div>
-
-Purchase commercial edition, send all source code, including front-end Vue source code and background Java source code.
-
-## GIT URL
-### GitHub repo
-[https://github.com/crudapi/crudapi-pro-example](https://github.com/crudapi/crudapi-pro-example)
-
-### Gitee repo
-[https://gitee.com/crudapi/crudapi-pro-example](https://gitee.com/crudapi/crudapi-pro-example)
 
 ### download and install crudapi jar
 ```bash
 cd lib
-set var PASSWORD, please contact us for get password!
 ./download.sh
 ```
 
@@ -96,19 +81,21 @@ mvn clean install -Dmaven.test.skip=true
 
 ### Run
 ```bash
-java -jar ./target/crudapi-pro-example-1.4.0.jar
+java -jar ./target/crudapi-example-1.4.0.jar
 ```
 
 ### Swagger
 [http://127.0.0.1:8888/swagger-ui.html](http://127.0.0.1:8888/swagger-ui.html)
 
-### User and password
+### Crudapi Admin Web
+[http://127.0.0.1:8888/crudapi/](http://127.0.0.1:8888/crudapi/)
+User and password
 ```
 superadmin
 1234567890
 ```
 
-### Crudapi Admin Web
+### Crudapi Admin Web (developer)
 #### GitHub repo
 [https://github.com/crudapi/crudapi-admin-web](https://github.com/crudapi/crudapi-admin-web)
 
@@ -150,6 +137,9 @@ admin@crudapi.cn
 
 #### QQ
 1440737304
+
+#### QQQun
+632034576
 
 #### Weixin
 undefinedneqnull
